@@ -177,11 +177,11 @@ func DoNetwork(ad *peersdb.PeerAddr) {
 		var e error
 		con_done := make(chan bool, 1)
 
-		go func(addr string) {
+		go func(raddr *net.TCPAddr) {
 			// we do net.Dial() in paralell routine, so we can abort quickly upon request
-			con, e = net.DialTimeout("tcp4", addr, TCPDialTimeout)
+			con, e = net.DialTCP("tcp4", nil, raddr)
 			con_done <- true
-		}(fmt.Sprintf("%d.%d.%d.%d:%d", ad.Ip4[0], ad.Ip4[1], ad.Ip4[2], ad.Ip4[3], ad.Port))
+		}(&net.TCPAddr{IP:ad.Ip4[:], Port:int(ad.Port)})
 
 		for {
 			select {
