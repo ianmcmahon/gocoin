@@ -117,6 +117,7 @@ func SockRead(con net.Conn, buf []byte) (n int, e error) {
 }
 
 func SockWrite(con net.Conn, buf []byte) (n int, e error) {
+	con.SetWriteDeadline(time.Now().Add(10 * time.Millisecond))
 	n, e = con.Write(buf)
 	return
 }
