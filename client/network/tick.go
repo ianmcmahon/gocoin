@@ -590,6 +590,9 @@ func (c *OneConnection) Run() {
 		}
 
 		c.Mutex.Lock()
+		c.counters["rcvd_zzzz"]++
+		c.counters["rbts_zzzz"] += uint64(24+len(ret.pl))
+
 		c.counters["rcvd_"+cmd.cmd]++
 		c.counters["rbts_"+cmd.cmd] += uint64(len(cmd.pl))
 		c.X.LastCmdRcvd = cmd.cmd
