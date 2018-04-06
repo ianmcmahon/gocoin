@@ -243,6 +243,9 @@ function update_connection_info(ci) {
 		s += 'Counters: ' + cnts + '\n'
 	}
 
+	document.title = msgs["zzzz"].sent + " | " + msgs["zzzz"].rcvd
+	//console.log(msgs["zzzz"])
+
 	s += '----------------------------------------------------------------\n'
 	s += ' Network message     Received from peer          Sent to peer\n'
 	s += '----------------------------------------------------------------\n'
