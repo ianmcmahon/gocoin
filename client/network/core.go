@@ -347,6 +347,12 @@ func (c *OneConnection) SendRawMsg(cmd string, pl []byte) (e error) {
 		case c.writing_thread_push <- true:
 		default:
 	}
+
+	c.Mutex.Lock()
+	c.counters["sent_zzzz"]++
+	c.counters["sbts_zzzz"] += uint64(24+len(pl))
+	c.Mutex.Unlock()
+
 	return
 }
 
@@ -538,6 +544,11 @@ func (c *OneConnection) FetchMessage() (ret *BCmsg, timeout_or_data bool) {
 	c.Mutex.Unlock()
 
 	c.LastMsgTime = time.Now()
+
+	c.Mutex.Lock()
+	c.counters["rcvd_zzzz"]++
+	c.counters["rbts_zzzz"] += uint64(24+len(ret.pl))
+	c.Mutex.Unlock()
 
 	return
 }
