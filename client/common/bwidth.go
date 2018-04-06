@@ -72,7 +72,7 @@ func TickSent() (ms int) {
 
 // Reads the given number of bytes, but respecting the download limit
 // Returns -1 and no error if we can't read any data now, because of bw limit
-func SockRead(con net.Conn, buf []byte) (n int, e error) {
+func SockRead2(con net.Conn, buf []byte) (n int, e error) {
 	var toread int
 	bw_mutex.Lock()
 	ms := TickRecv()
@@ -110,9 +110,20 @@ func SockRead(con net.Conn, buf []byte) (n int, e error) {
 	return
 }
 
+func SockRead(con net.Conn, buf []byte) (n int, e error) {
+	//con.SetReadDeadline(time.Now().Add(10 * time.Millisecond))
+	n, e = con.Read(buf)
+	return
+}
+
+func SockWrite(con net.Conn, buf []byte) (n int, e error) {
+	n, e = con.Write(buf)
+	return
+}
+
 // Send all the bytes, but respect the upload limit (force delays)
 // Returns -1 and no error if we can't send any data now, because of bw limit
-func SockWrite(con net.Conn, buf []byte) (n int, e error) {
+func SockWrite2(con net.Conn, buf []byte) (n int, e error) {
 	var tosend int
 	bw_mutex.Lock()
 	ms := TickSent()
