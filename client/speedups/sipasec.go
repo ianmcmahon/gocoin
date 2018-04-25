@@ -11,9 +11,9 @@ package main
 */
 
 import (
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/cgo/sipasec"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/others/cgo/sipasec"
 )
 
 func EC_Verify(k, s, h []byte) bool {

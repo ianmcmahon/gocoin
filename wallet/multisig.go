@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"encoding/hex"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 const MultiToSignOut = "multi2sign.txt"

@@ -5,7 +5,7 @@ import (
 	"bytes"
 	"io/ioutil"
 	"encoding/json"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 type oneMinerId struct {

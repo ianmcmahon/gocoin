@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"encoding/hex"
 	"encoding/json"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 

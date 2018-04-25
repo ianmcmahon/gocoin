@@ -2,8 +2,8 @@ package main
 
 import (
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/lib/utxo"
+	"github.com/ianmcmahon/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/lib/utxo"
 	"os"
 	"time"
 )

@@ -5,7 +5,7 @@ import (
 	"time"
 	"sort"
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 

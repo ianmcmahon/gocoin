@@ -7,10 +7,10 @@ import (
 	//"time"
 	"encoding/hex"
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/chain"
-	//"github.com/piotrnar/gocoin/lib/others/blockdb"
-	//"github.com/piotrnar/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/chain"
+	//"github.com/ianmcmahon/gocoin/lib/others/blockdb"
+	//"github.com/ianmcmahon/gocoin/lib/others/sys"
 )
 
 const (

@@ -5,9 +5,9 @@ import (
 	"time"
 	"encoding/hex"
 	"fmt"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/network"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/client/network"
 )
 
 const MAX_TXS_LEN = 999e3 // 999KB, with 1KB margin to not exceed 1MB with conibase

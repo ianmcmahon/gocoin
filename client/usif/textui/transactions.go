@@ -2,10 +2,10 @@ package textui
 
 import (
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/client/usif"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/client/network"
+	"github.com/ianmcmahon/gocoin/client/usif"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 	"io/ioutil"
 	"os"
 	"strconv"

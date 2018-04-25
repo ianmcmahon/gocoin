@@ -7,8 +7,8 @@ import (
 	"bytes"
 	"strings"
 	"encoding/hex"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/others/sys"
 )
 
 

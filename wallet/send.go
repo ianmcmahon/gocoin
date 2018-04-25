@@ -4,7 +4,7 @@ import (
 	"os"
 	"bufio"
 	"strings"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 // Resolved while parsing "-send" parameter

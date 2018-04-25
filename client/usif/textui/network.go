@@ -5,9 +5,9 @@ import (
 	"sort"
 	"time"
 	"strconv"
-	"github.com/piotrnar/gocoin/client/network"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
+	"github.com/ianmcmahon/gocoin/client/network"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/lib/others/peersdb"
 )
 
 

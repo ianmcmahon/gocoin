@@ -7,7 +7,7 @@ import (
 	"time"
 	"sort"
 	"crypto/rand"
-	"github.com/piotrnar/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/client/common"
 )
 
 const (

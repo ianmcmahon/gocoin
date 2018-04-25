@@ -3,8 +3,8 @@ package usif
 import (
 	"bufio"
 	"encoding/gob"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 	"os"
 	"sync"
 )

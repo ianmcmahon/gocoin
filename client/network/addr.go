@@ -6,11 +6,11 @@ import (
 	"sync"
 	"bytes"
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/client/common"
-	"github.com/piotrnar/gocoin/lib/others/peersdb"
+	"github.com/ianmcmahon/gocoin/lib/others/qdb"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/lib/others/peersdb"
 )
 
 

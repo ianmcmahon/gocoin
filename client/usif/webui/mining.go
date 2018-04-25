@@ -9,8 +9,8 @@ import (
 	"net/http"
 	"encoding/json"
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/client/common"
 )
 
 type omv struct {

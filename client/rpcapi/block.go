@@ -5,12 +5,12 @@ import (
 	"sync"
 	"strings"
 	"encoding/hex"
-	"github.com/piotrnar/gocoin/lib/btc"
-	"github.com/piotrnar/gocoin/client/network"
+	"github.com/ianmcmahon/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/client/network"
 	"encoding/json"
 	"io/ioutil"
 	"fmt"
-	"github.com/piotrnar/gocoin/client/common"
+	"github.com/ianmcmahon/gocoin/client/common"
 )
 
 type BlockSubmited struct {

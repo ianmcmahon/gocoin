@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 	"time"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/lib/others/utils"
+	"github.com/ianmcmahon/gocoin/lib/others/qdb"
+	"github.com/ianmcmahon/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/lib/others/utils"
 )
 
 type manyPeers []*utils.OnePeer

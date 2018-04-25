@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"bytes"
 	"encoding/hex"
-	"github.com/piotrnar/gocoin/lib/btc"
+	"github.com/ianmcmahon/gocoin/lib/btc"
 )
 
 // hex dump with max 32 bytes per line

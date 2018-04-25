@@ -11,9 +11,9 @@ import (
 	"strings"
 	"strconv"
 	"encoding/binary"
-	"github.com/piotrnar/gocoin/lib/others/qdb"
-	"github.com/piotrnar/gocoin/lib/others/sys"
-	"github.com/piotrnar/gocoin/lib/others/utils"
+	"github.com/ianmcmahon/gocoin/lib/others/qdb"
+	"github.com/ianmcmahon/gocoin/lib/others/sys"
+	"github.com/ianmcmahon/gocoin/lib/others/utils"
 )
 
 const (
